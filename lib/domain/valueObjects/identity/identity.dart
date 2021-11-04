@@ -1,5 +1,3 @@
-
-import 'package:either_dart/either.dart';
 import 'package:equatable/equatable.dart';
 
 class Identity extends Equatable {

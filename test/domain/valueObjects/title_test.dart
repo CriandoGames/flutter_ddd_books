@@ -14,7 +14,7 @@ main() {
       var title = Title.create('title  create');
 
       expect(title.isRight, true);
-      expect(title.right, 'title  create');
+      expect(title.right.value, 'title  create');
     });
   });
 }

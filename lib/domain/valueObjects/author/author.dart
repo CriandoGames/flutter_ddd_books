@@ -12,7 +12,7 @@ class Author extends Equatable {
 
   static Either<FailureAuthorEmpty, Author> create(String value) {
     if (value.isEmpty || value == '') {
-      return Left(FailureAuthorEmpty('author cannot be empty or null'));
+      return Left(FailureAuthorEmpty.create());
     } else {
       return Right(Author._(value));
     }
